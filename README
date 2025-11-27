@@ -1,62 +1,90 @@
-# Video Ad Understanding: Dataset and Code Supplement
+📘 YouTube madeForKids ads
 
-This repository contains supplementary material and resources accompanying our experiments on ad classification using Multi-modal LLMs. It includes the annotated ground truth dataset, metadata and transcription sources, experimental notebooks, and annotation guidelines.
+Dataset and Code Supplement
 
----
+This repository contains supplementary material accompanying our experiments on video ad classification using Multimodal LLMs.
+It includes the annotated ground-truth dataset, metadata sources, transcription pipelines, experimental notebooks, and the annotation codebook.
 
-## 📁 Repository Structure
+⸻
 
-### 1. `ground_truth.csv`
-- Contains the **final annotated dataset**.
-- Each row corresponds to a video with the following fields:
-  - `Video ID`
-  - `Primary Label`
-  - `Secondary Label`
-  - `Translated Transcription`
-  - `Native Transcription`
-  - `Metadata (title, tags, thumbnail, channelTitle, description)`
-  - `Languages` — indicates if a video was unavailable
+📁 Repository Structure
 
----
+1. ground_truth.csv
 
-### 2. `Appendix_AAAI.pdf`
-Auxiliary material such as diagrams, video screenshots, prompt, cost breakdown:
+Contains the final annotated dataset.
 
----
+Each row includes:
+	•	Video ID
+	•	Primary Label
+	•	Secondary Label
+	•	Translated Transcription
+	•	Native Transcription
+	•	Metadata fields (title, tags, thumbnail, channelTitle, description)
+	•	Languages (indicates if the video was unavailable)
 
-### 3. `PythonNotebooks/`
+⸻
 
-Python notebooks used for processing, enrichment, and experimentation.
+2. Appendix_AAAI.pdf
 
-#### 🔹 Retrieval Pipelines
-- `YouTube Videos Download.ipynb` – Source video collection and filtering
-- `Download Video Metadata.ipynb` – Download and process auxiliary metadata
+Supplementary materials including:
+	•	Figures & diagrams
+	•	Example video screenshots
+	•	Prompting details
+	•	Cost breakdowns
 
-#### 🔹 Experiment Notebooks
-Run and evaluate specific experiments using the labeled dataset
+⸻
 
+3. PythonNotebooks/
 
----
+Notebooks used for dataset creation, metadata processing, and experimental evaluation.
 
-### 5. `Updated Codebook.pdf/`
-- Final version of the annotation codebook used by human annotators  
-- Includes detailed descriptions of primary and secondary labels
+🔹 Retrieval Pipelines
+	•	YouTube Videos Download.ipynb — Raw video collection & filtering
+	•	Download Video Metadata.ipynb — Metadata retrieval & preprocessing
 
----
+🔹 Experiment Notebooks
+Run, evaluate, and reproduce experiments on:
+	•	Transcription-only models
+	•	Metadata-only models
+	•	Multimodal fusion pipelines
+	•	Gemini-based baselines
+	•	Additional ablations and sampling strategies
 
-## 🧩 Key Features
+(Your actual notebook names will appear in the directory tree.)
 
-- ✅ Pre-labeled dataset with multilingual transcription support  
-- ✅ Unified metadata integration  
-- ✅ Modular notebooks for replication and extension  
-- ✅ Transparent labeling policy via codebook  
+⸻
 
----
+4. Updated Codebook.pdf
 
-## 🚀 How to Use
+Final annotation guide used by human labelers.
 
-1. View the dataset in `ground_truth.csv`
-2. Use the notebooks in `PythonNotebooks/` to reproduce experiments
-3. Refer to `Updated Codebook.pdf` for label definitions and annotation criteria
+Contains:
+	•	Definitions for all primary & secondary labels
+	•	Examples per class
+	•	Edge cases and annotation policies
 
----
+⸻
+
+5. Appendices and Misc.
+
+Additional auxiliary files supporting the dataset and experiments.
+
+⸻
+
+🧩 Key Features
+	•	✅ Multilingual transcriptions (native + translated)
+	•	✅ Unified metadata integration
+	•	✅ Pre-labeled dataset for replication and benchmarking
+	•	✅ Modular and customizable pipeline
+	•	✅ Transparent labeling methodology via codebook
+
+⸻
+
+🚀 How to Use This Repository
+	1.	Load the dataset from ground_truth.csv
+	2.	Use Python notebooks to:
+	•	Reproduce experiments
+	•	Extend analysis
+	•	Implement additional modeling pipelines
+	3.	Consult Updated Codebook.pdf for label semantics
+	4.	Review Appendix materials for supplementary explanations
