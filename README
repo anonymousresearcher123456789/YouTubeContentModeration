@@ -1,0 +1,62 @@
+# Video Ad Understanding: Dataset and Code Supplement
+
+This repository contains supplementary material and resources accompanying our experiments on ad classification using Multi-modal LLMs. It includes the annotated ground truth dataset, metadata and transcription sources, experimental notebooks, and annotation guidelines.
+
+---
+
+## 📁 Repository Structure
+
+### 1. `ground_truth.csv`
+- Contains the **final annotated dataset**.
+- Each row corresponds to a video with the following fields:
+  - `Video ID`
+  - `Primary Label`
+  - `Secondary Label`
+  - `Translated Transcription`
+  - `Native Transcription`
+  - `Metadata (title, tags, thumbnail, channelTitle, description)`
+  - `Languages` — indicates if a video was unavailable
+
+---
+
+### 2. `Appendix_AAAI.pdf`
+Auxiliary material such as diagrams, video screenshots, prompt, cost breakdown:
+
+---
+
+### 3. `PythonNotebooks/`
+
+Python notebooks used for processing, enrichment, and experimentation.
+
+#### 🔹 Retrieval Pipelines
+- `YouTube Videos Download.ipynb` – Source video collection and filtering
+- `Download Video Metadata.ipynb` – Download and process auxiliary metadata
+
+#### 🔹 Experiment Notebooks
+Run and evaluate specific experiments using the labeled dataset
+
+
+---
+
+### 5. `Updated Codebook.pdf/`
+- Final version of the annotation codebook used by human annotators  
+- Includes detailed descriptions of primary and secondary labels
+
+---
+
+## 🧩 Key Features
+
+- ✅ Pre-labeled dataset with multilingual transcription support  
+- ✅ Unified metadata integration  
+- ✅ Modular notebooks for replication and extension  
+- ✅ Transparent labeling policy via codebook  
+
+---
+
+## 🚀 How to Use
+
+1. View the dataset in `ground_truth.csv`
+2. Use the notebooks in `PythonNotebooks/` to reproduce experiments
+3. Refer to `Updated Codebook.pdf` for label definitions and annotation criteria
+
+---
