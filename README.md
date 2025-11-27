@@ -25,17 +25,7 @@ Each row includes:
 
 ---
 
-### **2. `Appendix_AAAI.pdf`**
-
-Supplementary materials including:
-- 📊 Figures & diagrams  
-- 🖼️ Video screenshots  
-- 💬 Prompting details  
-- 💵 Cost breakdowns  
-
----
-
-### **3. `PythonNotebooks/`**
+### **2. `PythonNotebooks/`**
 
 Notebooks used for dataset construction, metadata enrichment, and experimental evaluation.
 
@@ -55,7 +45,7 @@ Run, evaluate, and reproduce experiments on:
 
 ---
 
-### **4. `Updated Codebook.pdf`**
+### **3. `Updated Codebook.pdf`**
 
 Final annotation guide used by human labelers.
 
@@ -66,7 +56,7 @@ Contains:
 
 ---
 
-### **5. Appendices & Miscellaneous**
+### **4. Miscellaneous**
 
 Additional supplementary files supporting the dataset and experiments.
 
@@ -90,6 +80,5 @@ Additional supplementary files supporting the dataset and experiments.
    - Extend analyses  
    - Implement additional modeling pipelines  
 3. 📘 Consult **`Updated Codebook.pdf`** for label semantics  
-4. 📎 Review appendix materials for supplementary explanations  
 
 ---
