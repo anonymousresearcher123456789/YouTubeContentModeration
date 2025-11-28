@@ -56,7 +56,13 @@ Contains:
 
 ---
 
-### **4. Miscellaneous**
+### **4. `Base Prompt.pdf`**
+
+Contains base CoT prompt use across all experiments.
+
+---
+
+### **5. Miscellaneous**
 
 Additional supplementary files supporting the dataset and experiments.
 
